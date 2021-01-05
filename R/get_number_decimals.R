@@ -11,8 +11,6 @@
 #' get_number_decimals(c(6.5e-4, 0.0100))
 #' get_number_decimals(c(0.00065, 0.0100))
 #' get_number_decimals(c(10^-7, 10e-7, 10e-3))
-#'
-#' @export
 get_number_decimals <- function(x)
 {
   if((any(x<0))|(any(x>=1)))
