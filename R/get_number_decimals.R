@@ -5,12 +5,12 @@
 #' @return Vector giving the number of decimals for each element in x if the number is <= 6; otherwise return 7 with a warning
 #'
 #' @examples
-#' get_number_decimals(c(0.0006, 0.0750, 0.0420, 0.0031, 0.0001, 0.0100))
-#' get_number_decimals(c(6*10^-4, 7.5*10^-2, 4.2*10^-2, 3.1*10^-3, 10^-4, 10^-2))
-#' get_number_decimals(c(6.5*10^-4, 0.0100)) 
-#' get_number_decimals(c(6.5e-4, 0.0100))
-#' get_number_decimals(c(0.00065, 0.0100))
-#' get_number_decimals(c(10^-7, 10e-7, 10e-3))
+#' #get_number_decimals(c(0.0006, 0.0750, 0.0420, 0.0031, 0.0001, 0.0100))
+#' #get_number_decimals(c(6*10^-4, 7.5*10^-2, 4.2*10^-2, 3.1*10^-3, 10^-4, 10^-2))
+#' #get_number_decimals(c(6.5*10^-4, 0.0100)) 
+#' #get_number_decimals(c(6.5e-4, 0.0100))
+#' #get_number_decimals(c(0.00065, 0.0100))
+#' #get_number_decimals(c(10^-7, 10e-7, 10e-3))
 get_number_decimals <- function(x)
 {
   if((any(x<0))|(any(x>=1)))
